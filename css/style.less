@@ -123,6 +123,7 @@ header {
 
 	h1 {
 		margin: 0;
+		line-height: 1;
 
 		.logo {
 			display: inline-block;
@@ -182,15 +183,10 @@ header {
 		margin-left: 3px;
 		float: right;
 		border-radius: 5px;
-		-webkit-transition: opacity .8s;
-		-moz-transition: opacity .8s;
-		-o-transition: opacity .8s;
-		-ms-transition: opacity .8s;
-		transition: opacity .8s;
+		.transition(opacity .8s);
 		opacity: .1;
 
 		&:hover {
-			background-color: rgba(0, 0, 0, 0.2);
 			opacity: 1;
 		}
 		&.youtube {
@@ -285,7 +281,7 @@ section.main {
 				bottom: -60px;
 				padding: 10px;
 				background-color: rgba(0, 0, 0, 0.55);
-				-webkit-transition: bottom 0.3s;
+				.transition(bottom 0.3s);
 				color: @colorBg;
 
 				h2 {
