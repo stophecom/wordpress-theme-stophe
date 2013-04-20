@@ -18,7 +18,8 @@ $(document).ready(function() {
 			console.log('indexof...');
 		} else {
 			$.get(url,function(data) {
-				$('.modalContent').html(data).addClass("active");;
+				$('.modalContent').html(data).addClass("active");
+				;
 				$('.portfolio').addClass('mini')
 			}).success(function() {
 					$('iframe').wrap('<div class="video" />').wrap('<div class="video-object" />');
@@ -29,7 +30,6 @@ $(document).ready(function() {
 	// menu
 	$('.mainMenuOpener').click(function() {
 		$(this).toggleClass('active');
-
 		$('nav.main-menu').slideToggle();
 	});
 });
